@@ -1,0 +1,55 @@
+# ============================================================
+# DOCKER COMPOSE — Chest X-Ray Diagnosis ML System
+# ============================================================
+# Services:
+#   xray-api       → FastAPI prediction server  (port 8000)
+#   xray-dashboard → Streamlit dashboard        (port 8501)
+#
+# Usage:
+#   docker compose up --build
+#   docker compose up xray-api          # API only
+#   docker compose up xray-dashboard    # Dashboard only
+# ============================================================
+
+version: "3.9"
+
+services:
+
+  xray-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: xray-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./xray_models:/app/xray_models    # persist trained models
+      - ./logs:/app/logs                  # persist prediction logs
+      - ./data:/app/data                  # mount dataset (read-only ok)
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+  xray-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard
+    container_name: xray-dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./xray_models:/app/xray_models
+      - ./logs:/app/logs
+    environment:
+      - XRAY_API_URL=http://xray-api:8000
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      xray-api:
+        condition: service_healthy
+    restart: unless-stopped

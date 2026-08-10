@@ -1,0 +1,86 @@
+{
+  "model_name": "densenet121_v20260802_154823",
+  "backbone": "densenet121",
+  "task": "Multi-label Chest X-Ray Pathology Detection",
+  "dataset": "NIH ChestX-ray14 (112,120 images, 14 classes)",
+  "num_classes": 14,
+  "pathology_labels": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Effusion",
+    "Infiltration",
+    "Mass",
+    "Nodule",
+    "Pneumonia",
+    "Pneumothorax",
+    "Consolidation",
+    "Edema",
+    "Emphysema",
+    "Fibrosis",
+    "Pleural_Thickening",
+    "Hernia"
+  ],
+  "trained_at": "2026-08-02T15:48:24.657197",
+  "metrics": {
+    "mean_auc": 0.7864,
+    "mean_f1": 0.2091,
+    "mean_ap": 0.1711,
+    "per_class_auc": {
+      "Atelectasis": 0.7622,
+      "Cardiomegaly": 0.8676,
+      "Effusion": 0.8502,
+      "Infiltration": 0.6827,
+      "Mass": 0.7634,
+      "Nodule": 0.6794,
+      "Pneumonia": 0.7023,
+      "Pneumothorax": 0.8446,
+      "Consolidation": 0.7655,
+      "Edema": 0.8781,
+      "Emphysema": 0.8312,
+      "Fibrosis": 0.7654,
+      "Pleural_Thickening": 0.7471,
+      "Hernia": 0.8705
+    }
+  },
+  "thresholds": {
+    "per_class": {
+      "Atelectasis": 0.8601,
+      "Cardiomegaly": 0.4,
+      "Effusion": 0.8861,
+      "Infiltration": 0.7938,
+      "Mass": 0.4,
+      "Nodule": 0.45,
+      "Pneumonia": 0.35,
+      "Pneumothorax": 0.3,
+      "Consolidation": 0.8919,
+      "Edema": 0.9158,
+      "Emphysema": 0.9242,
+      "Fibrosis": 0.9233,
+      "Pleural_Thickening": 0.9238,
+      "Hernia": 0.9826
+    },
+    "tuning_strategy": "F1-optimal with clinical overrides for critical labels"
+  },
+  "pipeline_config": {
+    "image_size": [
+      224,
+      224
+    ],
+    "backbone": "densenet121",
+    "pretrained": "ImageNet",
+    "augmentation": "CLAHE + HFlip + SafeRotation + ColorJitter",
+    "loss": "BCEWithLogitsLoss with pos_weights"
+  },
+  "clinical_notes": {
+    "pneumonia_threshold": 0.35,
+    "pneumothorax_threshold": 0.3,
+    "intended_use": "Decision support for radiologists \u2014 NOT for autonomous diagnosis",
+    "limitations": "Trained on NIH labels derived from NLP \u2014 may contain label noise"
+  },
+  "business_impact": {
+    "use_case": "Radiology AI triage \u2014 Apollo, Fortis, Max Healthcare, Niramai",
+    "speed_benefit": "Prioritize high-risk cases in radiology queue",
+    "cost_saving": "Reduce radiologist review time by 30-40% on normal cases"
+  },
+  "google_model_card_version": "1.0"
+}

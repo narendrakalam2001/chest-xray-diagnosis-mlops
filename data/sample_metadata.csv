@@ -1,0 +1,501 @@
+image_index,finding_labels,follow_up_,patient_id,patient_age,patient_gender,view_position
+00022260_003.png,No Finding,3,22260,54,F,PA
+00012048_007.png,Infiltration|Mass|Nodule,7,12048,65,M,AP
+00014352_005.png,No Finding,5,14352,6,M,PA
+00006040_001.png,No Finding,1,6040,18,F,AP
+00011202_002.png,No Finding,2,11202,19,M,AP
+00002275_007.png,Emphysema|Infiltration|Pneumothorax,7,2275,62,M,PA
+00003446_008.png,No Finding,8,3446,49,M,AP
+00030350_000.png,Atelectasis,0,30350,24,M,PA
+00004640_000.png,No Finding,0,4640,37,F,PA
+00008858_007.png,Effusion,7,8858,49,F,AP
+00018044_033.png,No Finding,33,18044,34,F,AP
+00004859_000.png,No Finding,0,4859,41,F,PA
+00014663_049.png,Nodule,49,14663,64,M,AP
+00027067_002.png,No Finding,2,27067,67,M,PA
+00026747_000.png,No Finding,0,26747,65,M,PA
+00017747_058.png,No Finding,58,17747,31,M,PA
+00006832_004.png,Consolidation|Mass|Nodule,4,6832,18,M,AP
+00025252_060.png,Atelectasis|Infiltration,60,25252,30,M,AP
+00021584_003.png,No Finding,3,21584,48,M,PA
+00010794_003.png,No Finding,3,10794,23,F,AP
+00016308_005.png,Effusion|Mass,5,16308,46,M,AP
+00030101_005.png,Pleural_Thickening,5,30101,68,M,AP
+00020894_005.png,No Finding,5,20894,50,M,AP
+00024833_000.png,No Finding,0,24833,31,F,PA
+00014149_039.png,Infiltration,39,14149,59,F,AP
+00015826_021.png,Infiltration,21,15826,49,M,AP
+00022764_012.png,Effusion,12,22764,70,M,PA
+00000800_000.png,Atelectasis|Cardiomegaly,0,800,50,F,PA
+00030279_013.png,No Finding,13,30279,72,M,PA
+00015321_002.png,No Finding,2,15321,67,M,AP
+00009336_010.png,No Finding,10,9336,24,M,PA
+00007424_001.png,No Finding,1,7424,30,F,PA
+00006144_003.png,No Finding,3,6144,50,M,AP
+00001698_000.png,Pleural_Thickening,0,1698,31,M,PA
+00017729_007.png,No Finding,7,17729,43,M,AP
+00003028_044.png,Consolidation,44,3028,58,F,AP
+00021278_000.png,No Finding,0,21278,71,F,AP
+00008875_027.png,No Finding,27,8875,65,F,AP
+00002312_006.png,Effusion|Infiltration|Mass,6,2312,54,M,PA
+00020095_001.png,Nodule,1,20095,62,M,AP
+00007297_000.png,No Finding,0,7297,62,M,PA
+00011973_005.png,No Finding,5,11973,58,M,PA
+00012832_002.png,No Finding,2,12832,49,M,PA
+00018560_001.png,Atelectasis,1,18560,60,M,PA
+00007185_019.png,Infiltration,19,7185,28,M,AP
+00012919_009.png,No Finding,9,12919,18,M,PA
+00022607_000.png,No Finding,0,22607,64,F,PA
+00018421_002.png,Atelectasis,2,18421,41,M,PA
+00007557_010.png,Effusion,10,7557,60,M,PA
+00027814_000.png,No Finding,0,27814,56,M,PA
+00016871_002.png,No Finding,2,16871,31,F,PA
+00004695_001.png,No Finding,1,4695,55,M,AP
+00009230_001.png,No Finding,1,9230,37,M,PA
+00005806_001.png,No Finding,1,5806,44,F,AP
+00004832_002.png,Effusion|Fibrosis,2,4832,37,M,PA
+00017235_001.png,No Finding,1,17235,69,M,AP
+00029041_015.png,No Finding,15,29041,28,M,AP
+00009311_000.png,No Finding,0,9311,41,M,PA
+00017645_004.png,No Finding,4,17645,48,F,AP
+00011190_006.png,Infiltration,6,11190,22,M,PA
+00015564_004.png,No Finding,4,15564,29,M,AP
+00028336_000.png,No Finding,0,28336,23,F,PA
+00010758_008.png,Atelectasis,8,10758,55,M,PA
+00019479_005.png,Cardiomegaly|Effusion|Infiltration,5,19479,33,F,AP
+00023585_000.png,No Finding,0,23585,32,M,PA
+00000099_008.png,Effusion,8,99,58,F,AP
+00010012_045.png,Consolidation,45,10012,53,M,AP
+00014414_001.png,No Finding,1,14414,52,M,AP
+00027409_000.png,Infiltration,0,27409,53,F,PA
+00015553_000.png,No Finding,0,15553,7,M,PA
+00006713_001.png,Atelectasis|Pneumonia,1,6713,72,M,PA
+00011596_002.png,Atelectasis|Infiltration|Mass,2,11596,66,F,AP
+00000175_002.png,Atelectasis,2,175,60,M,AP
+00019264_000.png,No Finding,0,19264,52,F,PA
+00006926_003.png,No Finding,3,6926,68,M,AP
+00020189_000.png,No Finding,0,20189,42,F,PA
+00004737_005.png,No Finding,5,4737,49,M,AP
+00026934_000.png,No Finding,0,26934,40,M,AP
+00012222_002.png,No Finding,2,12222,57,F,PA
+00020958_002.png,No Finding,2,20958,68,M,AP
+00023135_000.png,No Finding,0,23135,39,F,PA
+00022322_005.png,Infiltration,5,22322,30,F,AP
+00020458_006.png,Infiltration|Nodule,6,20458,54,M,PA
+00005403_014.png,Effusion|Infiltration,14,5403,35,F,AP
+00020408_045.png,Atelectasis,45,20408,45,M,AP
+00004307_004.png,Atelectasis|Effusion,4,4307,59,M,AP
+00017236_090.png,Infiltration,90,17236,46,M,AP
+00016404_009.png,No Finding,9,16404,44,M,AP
+00004598_005.png,No Finding,5,4598,38,M,PA
+00004605_005.png,Infiltration,5,4605,14,M,AP
+00017723_001.png,No Finding,1,17723,34,F,PA
+00020983_003.png,Infiltration,3,20983,43,M,AP
+00016687_000.png,Nodule,0,16687,62,M,PA
+00016299_001.png,No Finding,1,16299,78,M,PA
+00011391_002.png,No Finding,2,11391,37,F,AP
+00010697_002.png,No Finding,2,10697,59,M,PA
+00007170_002.png,Infiltration,2,7170,66,F,PA
+00006952_000.png,No Finding,0,6952,30,M,PA
+00024088_000.png,No Finding,0,24088,36,F,PA
+00002438_000.png,Fibrosis,0,2438,68,F,PA
+00014125_017.png,No Finding,17,14125,26,M,PA
+00008302_001.png,Atelectasis,1,8302,64,M,AP
+00012043_010.png,Infiltration,10,12043,34,M,PA
+00000248_022.png,Effusion|Infiltration|Mass,22,248,87,M,PA
+00020113_019.png,Atelectasis|Effusion,19,20113,38,M,AP
+00000796_003.png,No Finding,3,796,63,F,PA
+00015982_000.png,No Finding,0,15982,18,M,AP
+00001451_000.png,No Finding,0,1451,60,M,PA
+00016991_008.png,Edema|Infiltration|Nodule|Pneumonia,8,16991,31,F,PA
+00011379_014.png,Consolidation,14,11379,9,M,PA
+00018819_004.png,Mass,4,18819,55,F,AP
+00011913_001.png,Mass,1,11913,63,F,PA
+00027462_004.png,Atelectasis|Consolidation|Effusion|Infiltration,4,27462,32,F,AP
+00020213_031.png,Atelectasis|Effusion,31,20213,72,F,AP
+00024919_000.png,No Finding,0,24919,40,F,PA
+00006725_000.png,No Finding,0,6725,25,M,PA
+00010594_001.png,Nodule,1,10594,24,F,PA
+00012020_004.png,Effusion,4,12020,71,M,PA
+00017255_002.png,No Finding,2,17255,26,F,AP
+00005455_001.png,No Finding,1,5455,59,F,PA
+00010647_000.png,No Finding,0,10647,48,F,PA
+00005772_000.png,No Finding,0,5772,59,M,PA
+00001989_005.png,Atelectasis|Infiltration|Pneumothorax,5,1989,47,M,AP
+00022260_004.png,Infiltration,4,22260,54,F,PA
+00022459_006.png,Effusion|Infiltration,6,22459,65,F,PA
+00014472_010.png,Atelectasis|Edema|Effusion|Infiltration,10,14472,42,M,AP
+00005070_002.png,No Finding,2,5070,71,M,AP
+00006601_005.png,Atelectasis|Consolidation,5,6601,58,F,PA
+00016796_009.png,Pneumothorax,9,16796,64,F,PA
+00027464_006.png,No Finding,6,27464,34,F,AP
+00001143_002.png,No Finding,2,1143,53,F,PA
+00016232_002.png,No Finding,2,16232,44,M,PA
+00007034_019.png,No Finding,19,7034,31,F,PA
+00011719_002.png,No Finding,2,11719,72,M,AP
+00003570_000.png,No Finding,0,3570,20,M,AP
+00016184_004.png,No Finding,4,16184,43,F,AP
+00005493_005.png,No Finding,5,5493,70,F,AP
+00004746_022.png,No Finding,22,4746,42,F,AP
+00015530_047.png,Emphysema,47,15530,20,M,AP
+00007735_029.png,No Finding,29,7735,31,M,PA
+00009229_006.png,No Finding,6,9229,36,M,AP
+00020725_022.png,Atelectasis|Effusion|Infiltration,22,20725,50,M,AP
+00025664_004.png,Atelectasis|Consolidation,4,25664,71,M,AP
+00027182_001.png,No Finding,1,27182,50,M,PA
+00027893_000.png,Mass,0,27893,59,F,PA
+00001250_014.png,Infiltration,14,1250,67,F,AP
+00009230_003.png,No Finding,3,9230,37,M,AP
+00026236_016.png,No Finding,16,26236,37,F,AP
+00026726_000.png,No Finding,0,26726,66,M,PA
+00026451_029.png,Pneumothorax,29,26451,51,M,AP
+00007094_002.png,No Finding,2,7094,63,F,PA
+00012863_002.png,Atelectasis,2,12863,40,F,AP
+00009058_001.png,No Finding,1,9058,56,F,AP
+00030679_000.png,Nodule,0,30679,63,M,PA
+00010871_000.png,Effusion,0,10871,73,M,PA
+00027511_000.png,No Finding,0,27511,48,M,PA
+00004461_011.png,No Finding,11,4461,35,M,PA
+00001170_030.png,Pneumothorax,30,1170,23,M,PA
+00002673_004.png,No Finding,4,2673,25,M,AP
+00021118_001.png,Atelectasis|Infiltration,1,21118,45,M,PA
+00026451_032.png,No Finding,32,26451,51,M,AP
+00026254_000.png,No Finding,0,26254,58,F,PA
+00006068_005.png,Infiltration,5,6068,31,M,AP
+00017947_013.png,No Finding,13,17947,44,M,AP
+00006404_000.png,Atelectasis|Effusion,0,6404,61,M,PA
+00019643_000.png,Infiltration,0,19643,31,F,PA
+00028148_012.png,Atelectasis|Pneumothorax,12,28148,20,F,PA
+00006763_004.png,Infiltration|Mass,4,6763,13,M,AP
+00016789_002.png,No Finding,2,16789,34,M,AP
+00002617_001.png,No Finding,1,2617,47,F,PA
+00008394_002.png,No Finding,2,8394,56,F,AP
+00013470_000.png,No Finding,0,13470,24,F,AP
+00000547_003.png,No Finding,3,547,50,F,PA
+00011460_004.png,Pneumothorax,4,11460,16,M,PA
+00028626_001.png,Mass|Nodule,1,28626,60,F,PA
+00001814_005.png,Consolidation,5,1814,32,F,AP
+00006725_002.png,No Finding,2,6725,26,M,PA
+00026185_006.png,Nodule,6,26185,43,M,PA
+00002863_000.png,No Finding,0,2863,52,F,PA
+00000273_006.png,No Finding,6,273,57,F,PA
+00027864_002.png,No Finding,2,27864,56,F,AP
+00025628_010.png,Consolidation,10,25628,76,F,AP
+00014320_040.png,No Finding,40,14320,26,F,AP
+00015707_000.png,No Finding,0,15707,45,M,PA
+00016220_020.png,Atelectasis|Infiltration,20,16220,29,F,PA
+00022202_002.png,Atelectasis,2,22202,49,M,PA
+00017214_008.png,No Finding,8,17214,54,F,AP
+00019530_003.png,Pleural_Thickening,3,19530,42,M,PA
+00028275_001.png,No Finding,1,28275,70,M,AP
+00028173_001.png,No Finding,1,28173,16,F,AP
+00020124_003.png,Mass|Nodule|Atelectasis,3,20124,63,M,PA
+00022622_010.png,No Finding,10,22622,58,M,PA
+00016484_021.png,No Finding,21,16484,7,F,PA
+00011794_006.png,Edema|Effusion|Infiltration,6,11794,55,F,AP
+00005740_006.png,No Finding,6,5740,50,F,AP
+00014137_001.png,No Finding,1,14137,73,M,PA
+00003337_002.png,Pneumothorax,2,3337,68,F,AP
+00013079_002.png,Nodule,2,13079,20,F,AP
+00019124_110.png,Pneumothorax,110,19124,51,F,PA
+00009604_005.png,No Finding,5,9604,46,M,AP
+00028813_000.png,No Finding,0,28813,74,M,PA
+00001986_005.png,No Finding,5,1986,58,F,AP
+00018829_018.png,Pleural_Thickening,18,18829,55,M,AP
+00019637_008.png,Effusion|Infiltration,8,19637,73,M,PA
+00003867_009.png,Atelectasis|Consolidation|Effusion,9,3867,34,M,AP
+00013629_000.png,No Finding,0,13629,60,F,PA
+00025777_000.png,Nodule,0,25777,44,F,AP
+00029035_006.png,No Finding,6,29035,18,M,PA
+00014520_016.png,No Finding,16,14520,32,M,AP
+00003764_000.png,No Finding,0,3764,58,F,PA
+00013714_006.png,Edema|Infiltration,6,13714,35,M,AP
+00003309_000.png,Fibrosis,0,3309,59,F,PA
+00028888_000.png,Atelectasis,0,28888,69,F,PA
+00005384_001.png,No Finding,1,5384,65,M,AP
+00010367_009.png,Pleural_Thickening,9,10367,26,M,PA
+00005950_004.png,No Finding,4,5950,63,F,AP
+00025858_000.png,Infiltration|Nodule,0,25858,32,F,PA
+00011696_002.png,No Finding,2,11696,55,F,PA
+00003446_004.png,Infiltration,4,3446,49,M,AP
+00015064_001.png,Cardiomegaly|Consolidation|Infiltration,1,15064,76,M,AP
+00012880_019.png,No Finding,19,12880,65,M,PA
+00029817_005.png,Infiltration,5,29817,67,F,AP
+00005712_026.png,Consolidation,26,5712,33,M,AP
+00011619_000.png,No Finding,0,11619,30,M,AP
+00018072_003.png,No Finding,3,18072,63,F,AP
+00007468_000.png,No Finding,0,7468,8,M,PA
+00007217_002.png,No Finding,2,7217,38,F,AP
+00019430_000.png,Infiltration|Nodule|Pleural_Thickening,0,19430,72,M,AP
+00025529_013.png,Edema|Effusion|Infiltration,13,25529,35,M,AP
+00005360_001.png,Pleural_Thickening,1,5360,64,M,PA
+00011213_000.png,No Finding,0,11213,32,F,PA
+00013624_008.png,No Finding,8,13624,24,F,PA
+00010019_000.png,Atelectasis,0,10019,71,F,PA
+00000949_005.png,Effusion|Infiltration|Mass,5,949,62,M,PA
+00012392_009.png,No Finding,9,12392,49,M,PA
+00004931_000.png,No Finding,0,4931,33,F,PA
+00027582_002.png,No Finding,2,27582,54,M,PA
+00008678_004.png,Atelectasis|Effusion,4,8678,53,F,PA
+00027894_010.png,Consolidation|Mass,10,27894,71,M,AP
+00013950_000.png,No Finding,0,13950,148,M,PA
+00029808_003.png,Cardiomegaly|Consolidation|Effusion|Pneumonia,3,29808,32,M,PA
+00001722_006.png,Atelectasis|Consolidation|Nodule,6,1722,52,F,AP
+00010695_008.png,Nodule|Pneumothorax,8,10695,25,F,PA
+00010608_005.png,Mass|Nodule,5,10608,26,F,PA
+00001008_000.png,No Finding,0,1008,27,M,PA
+00015376_022.png,Atelectasis,22,15376,60,F,PA
+00022949_000.png,Atelectasis|Effusion|Infiltration,0,22949,68,M,PA
+00002704_000.png,No Finding,0,2704,38,F,PA
+00013917_011.png,No Finding,11,13917,53,M,PA
+00004082_005.png,No Finding,5,4082,51,F,PA
+00000213_005.png,No Finding,5,213,39,M,PA
+00000997_002.png,No Finding,2,997,36,M,PA
+00015530_012.png,No Finding,12,15530,20,M,AP
+00002337_002.png,No Finding,2,2337,55,M,PA
+00017271_000.png,No Finding,0,17271,42,M,PA
+00004381_008.png,No Finding,8,4381,29,M,AP
+00001310_000.png,No Finding,0,1310,60,M,PA
+00022481_006.png,Effusion,6,22481,71,F,PA
+00027468_000.png,Cardiomegaly|Effusion,0,27468,49,M,PA
+00025757_000.png,No Finding,0,25757,66,F,AP
+00017138_007.png,Consolidation|Infiltration,7,17138,23,M,AP
+00012733_005.png,No Finding,5,12733,71,M,AP
+00015414_018.png,Effusion|Infiltration,18,15414,40,M,PA
+00012532_003.png,No Finding,3,12532,42,F,AP
+00003868_007.png,Atelectasis,7,3868,56,M,PA
+00023144_001.png,No Finding,1,23144,39,F,PA
+00027822_000.png,No Finding,0,27822,44,F,PA
+00002442_000.png,Cardiomegaly|Infiltration,0,2442,25,M,PA
+00019146_000.png,Infiltration,0,19146,49,M,PA
+00002300_001.png,No Finding,1,2300,80,F,AP
+00010677_028.png,No Finding,28,10677,56,F,AP
+00013467_013.png,No Finding,13,13467,32,M,AP
+00025303_019.png,Atelectasis,19,25303,63,F,PA
+00018656_003.png,No Finding,3,18656,69,M,PA
+00030650_005.png,Effusion|Infiltration|Mass,5,30650,66,M,AP
+00008295_044.png,No Finding,44,8295,62,M,AP
+00020166_001.png,Nodule,1,20166,56,M,PA
+00001518_000.png,No Finding,0,1518,26,M,PA
+00003478_003.png,No Finding,3,3478,16,M,AP
+00000321_001.png,Infiltration,1,321,74,F,PA
+00018972_003.png,No Finding,3,18972,52,F,AP
+00015318_007.png,Atelectasis|Effusion,7,15318,78,F,PA
+00018385_002.png,No Finding,2,18385,61,F,AP
+00008250_000.png,No Finding,0,8250,5,M,PA
+00017167_000.png,No Finding,0,17167,63,M,PA
+00019442_004.png,No Finding,4,19442,35,M,AP
+00016041_003.png,Infiltration,3,16041,71,M,AP
+00002796_010.png,Pneumothorax,10,2796,63,F,PA
+00028912_001.png,No Finding,1,28912,56,M,PA
+00012087_042.png,Fibrosis|Infiltration,42,12087,68,F,PA
+00009330_001.png,No Finding,1,9330,51,M,PA
+00022065_010.png,Nodule,10,22065,46,M,AP
+00006572_000.png,No Finding,0,6572,47,M,PA
+00009190_002.png,No Finding,2,9190,61,F,AP
+00021552_023.png,Emphysema|Infiltration|Nodule,23,21552,50,M,PA
+00007624_052.png,Infiltration,52,7624,25,M,AP
+00012413_001.png,No Finding,1,12413,43,F,AP
+00026836_003.png,Infiltration,3,26836,32,M,PA
+00002763_021.png,Effusion|Infiltration,21,2763,52,F,AP
+00019246_002.png,No Finding,2,19246,44,M,PA
+00006327_001.png,No Finding,1,6327,43,F,PA
+00014004_021.png,No Finding,21,14004,58,F,AP
+00028843_001.png,No Finding,1,28843,30,F,AP
+00010423_000.png,No Finding,0,10423,53,M,PA
+00006271_088.png,No Finding,88,6271,40,M,AP
+00011702_038.png,Atelectasis|Cardiomegaly|Consolidation|Effusion,38,11702,26,F,AP
+00027931_000.png,No Finding,0,27931,33,F,PA
+00015679_004.png,Atelectasis,4,15679,64,M,AP
+00002208_002.png,Effusion,2,2208,52,F,AP
+00013429_003.png,Fibrosis|Infiltration,3,13429,51,F,PA
+00015903_004.png,Mass,4,15903,76,F,AP
+00013894_047.png,Atelectasis|Effusion,47,13894,21,M,AP
+00022235_002.png,Emphysema|Mass|Pneumothorax,2,22235,46,M,PA
+00001653_000.png,No Finding,0,1653,41,F,PA
+00022237_020.png,Atelectasis|Cardiomegaly|Effusion|Infiltration|Nodule,20,22237,70,M,AP
+00023138_012.png,Edema|Infiltration,12,23138,40,M,AP
+00003601_007.png,No Finding,7,3601,43,M,AP
+00007321_007.png,Atelectasis|Pneumonia,7,7321,58,M,AP
+00004576_000.png,No Finding,0,4576,58,M,PA
+00012628_064.png,Effusion,64,12628,51,F,AP
+00014403_000.png,No Finding,0,14403,49,F,PA
+00008008_005.png,Infiltration|Nodule,5,8008,21,F,PA
+00009524_010.png,No Finding,10,9524,73,F,AP
+00004434_000.png,No Finding,0,4434,47,F,AP
+00030557_001.png,No Finding,1,30557,40,F,PA
+00016242_000.png,No Finding,0,16242,64,M,PA
+00003875_003.png,No Finding,3,3875,21,M,AP
+00019894_039.png,No Finding,39,19894,61,M,AP
+00012461_000.png,Nodule,0,12461,54,F,PA
+00007141_001.png,No Finding,1,7141,16,M,AP
+00001504_002.png,No Finding,2,1504,66,M,AP
+00029413_000.png,Mass,0,29413,50,M,PA
+00015679_009.png,Effusion,9,15679,64,M,AP
+00015630_000.png,No Finding,0,15630,43,M,AP
+00011756_000.png,No Finding,0,11756,57,F,PA
+00016587_018.png,Atelectasis|Pneumothorax,18,16587,48,F,AP
+00019953_000.png,No Finding,0,19953,15,M,AP
+00004861_001.png,No Finding,1,4861,11,M,PA
+00012010_007.png,Infiltration,7,12010,54,M,AP
+00005712_032.png,Infiltration,32,5712,32,M,PA
+00021956_001.png,Infiltration,1,21956,57,M,PA
+00008008_054.png,No Finding,54,8008,23,F,PA
+00011845_014.png,Infiltration|Mass,14,11845,66,F,PA
+00008401_008.png,Pleural_Thickening,8,8401,57,F,PA
+00024175_003.png,No Finding,3,24175,54,M,PA
+00021239_006.png,No Finding,6,21239,50,M,AP
+00014692_000.png,Cardiomegaly,0,14692,55,M,AP
+00020312_022.png,Infiltration,22,20312,37,F,PA
+00014787_001.png,No Finding,1,14787,49,F,PA
+00006434_004.png,No Finding,4,6434,39,M,PA
+00009608_053.png,Infiltration,53,9608,30,M,AP
+00028271_000.png,Infiltration,0,28271,56,F,PA
+00030339_009.png,No Finding,9,30339,56,F,AP
+00000500_006.png,No Finding,6,500,72,F,PA
+00017926_009.png,No Finding,9,17926,61,M,AP
+00001931_024.png,No Finding,24,1931,23,M,PA
+00001684_012.png,No Finding,12,1684,58,M,AP
+00007958_000.png,No Finding,0,7958,37,F,PA
+00026293_004.png,Fibrosis,4,26293,49,F,PA
+00030637_008.png,Atelectasis|Emphysema|Infiltration|Pleural_Thickening|Pneumothorax,8,30637,49,M,PA
+00026342_000.png,No Finding,0,26342,70,M,PA
+00000583_001.png,No Finding,1,583,38,F,PA
+00018175_007.png,No Finding,7,18175,55,M,PA
+00005448_012.png,No Finding,12,5448,60,M,AP
+00001634_003.png,No Finding,3,1634,43,F,AP
+00012042_000.png,No Finding,0,12042,37,F,PA
+00028311_000.png,No Finding,0,28311,32,F,PA
+00015770_010.png,Cardiomegaly,10,15770,66,F,AP
+00030636_013.png,Atelectasis|Effusion|Pneumothorax,13,30636,46,M,PA
+00000693_001.png,Atelectasis|Nodule,1,693,58,M,PA
+00025811_003.png,No Finding,3,25811,67,M,AP
+00021035_001.png,Edema|Effusion|Infiltration,1,21035,34,M,AP
+00020602_008.png,Pleural_Thickening,8,20602,22,M,AP
+00009414_000.png,No Finding,0,9414,46,M,PA
+00005201_001.png,Effusion|Infiltration,1,5201,47,M,AP
+00026153_000.png,No Finding,0,26153,26,F,PA
+00022717_008.png,Atelectasis|Infiltration,8,22717,58,M,PA
+00005512_004.png,No Finding,4,5512,43,M,PA
+00002442_001.png,No Finding,1,2442,25,M,PA
+00026338_001.png,Infiltration,1,26338,17,M,PA
+00025252_063.png,Effusion,63,25252,30,M,AP
+00029122_000.png,Infiltration,0,29122,26,F,PA
+00006851_032.png,Infiltration,32,6851,48,M,AP
+00002899_000.png,No Finding,0,2899,56,M,PA
+00012141_023.png,Infiltration,23,12141,31,M,AP
+00017714_023.png,Pleural_Thickening,23,17714,20,M,AP
+00013206_003.png,No Finding,3,13206,14,F,AP
+00027042_000.png,Nodule,0,27042,70,M,AP
+00006271_056.png,No Finding,56,6271,40,M,AP
+00017096_000.png,No Finding,0,17096,60,F,PA
+00026492_000.png,No Finding,0,26492,41,F,PA
+00027299_000.png,Nodule,0,27299,28,M,PA
+00021942_015.png,Infiltration|Nodule,15,21942,37,F,AP
+00010794_002.png,Atelectasis,2,10794,23,F,AP
+00012753_000.png,Atelectasis,0,12753,62,F,PA
+00020436_001.png,Mass,1,20436,45,M,AP
+00004366_001.png,No Finding,1,4366,36,M,PA
+00006222_000.png,No Finding,0,6222,47,M,PA
+00000538_002.png,Infiltration,2,538,74,F,PA
+00011988_001.png,No Finding,1,11988,6,M,PA
+00011391_014.png,Atelectasis,14,11391,39,F,AP
+00009798_003.png,No Finding,3,9798,34,M,PA
+00011873_010.png,Atelectasis,10,11873,41,F,AP
+00019330_001.png,Atelectasis|Effusion,1,19330,23,M,PA
+00007954_000.png,No Finding,0,7954,63,M,PA
+00028293_000.png,Infiltration,0,28293,51,F,PA
+00014521_001.png,Consolidation|Fibrosis|Infiltration|Nodule,1,14521,31,F,PA
+00010103_011.png,Infiltration,11,10103,72,M,PA
+00028225_000.png,No Finding,0,28225,32,F,PA
+00022687_000.png,Atelectasis,0,22687,74,F,PA
+00012342_005.png,Atelectasis,5,12342,60,M,PA
+00004745_002.png,No Finding,2,4745,75,M,PA
+00000086_000.png,No Finding,0,86,76,M,PA
+00029088_004.png,Effusion,4,29088,47,F,AP
+00029897_002.png,No Finding,2,29897,67,F,PA
+00024317_002.png,No Finding,2,24317,53,M,PA
+00011632_021.png,Consolidation|Infiltration|Nodule,21,11632,57,M,AP
+00028339_000.png,No Finding,0,28339,33,M,PA
+00012014_003.png,No Finding,3,12014,34,F,PA
+00025839_020.png,Effusion|Infiltration,20,25839,29,M,AP
+00027322_008.png,Nodule,8,27322,45,M,PA
+00001601_008.png,Edema|Effusion|Infiltration,8,1601,56,F,PA
+00008778_000.png,No Finding,0,8778,65,M,AP
+00015530_035.png,Effusion,35,15530,20,M,AP
+00021201_008.png,Effusion|Infiltration,8,21201,65,M,PA
+00011785_002.png,No Finding,2,11785,16,M,AP
+00015932_000.png,No Finding,0,15932,38,F,PA
+00009904_003.png,No Finding,3,9904,40,M,AP
+00000150_004.png,Atelectasis|Effusion,4,150,55,F,PA
+00009380_003.png,Atelectasis,3,9380,65,F,AP
+00011639_000.png,No Finding,0,11639,49,M,PA
+00025787_001.png,Edema|Infiltration|Nodule,1,25787,27,M,AP
+00009128_000.png,No Finding,0,9128,37,M,PA
+00002594_005.png,Infiltration,5,2594,35,F,AP
+00023330_000.png,No Finding,0,23330,28,M,PA
+00022899_025.png,Effusion,25,22899,60,M,PA
+00006626_002.png,Consolidation|Effusion|Infiltration,2,6626,29,F,AP
+00010035_002.png,No Finding,2,10035,22,M,AP
+00012233_006.png,Pneumothorax,6,12233,24,F,PA
+00020092_000.png,Nodule,0,20092,50,M,PA
+00010357_003.png,Consolidation,3,10357,45,F,PA
+00010353_001.png,No Finding,1,10353,62,M,PA
+00010767_003.png,Pneumothorax,3,10767,58,M,AP
+00017887_000.png,Infiltration,0,17887,47,F,PA
+00015371_005.png,No Finding,5,15371,53,M,AP
+00017645_012.png,Atelectasis|Effusion,12,17645,48,F,PA
+00006182_006.png,Atelectasis|Mass,6,6182,50,M,AP
+00019825_017.png,Infiltration,17,19825,33,M,PA
+00008069_004.png,Effusion,4,8069,41,F,PA
+00025369_004.png,No Finding,4,25369,39,F,PA
+00018117_015.png,Pneumothorax,15,18117,34,M,PA
+00015063_000.png,No Finding,0,15063,49,M,PA
+00006416_001.png,No Finding,1,6416,52,M,AP
+00021424_000.png,No Finding,0,21424,58,M,PA
+00015222_006.png,Infiltration,6,15222,70,M,AP
+00030522_002.png,No Finding,2,30522,26,M,AP
+00015530_020.png,Consolidation,20,15530,20,M,AP
+00022971_001.png,Infiltration,1,22971,61,M,PA
+00025529_008.png,No Finding,8,25529,35,M,PA
+00001492_002.png,No Finding,2,1492,61,M,AP
+00008296_001.png,No Finding,1,8296,46,M,PA
+00018483_000.png,Consolidation,0,18483,52,F,PA
+00001738_006.png,No Finding,6,1738,50,M,AP
+00004625_000.png,Atelectasis|Effusion,0,4625,49,F,PA
+00003669_000.png,No Finding,0,3669,77,M,PA
+00014034_009.png,Atelectasis|Edema,9,14034,46,M,PA
+00011649_013.png,No Finding,13,11649,39,M,PA
+00022877_026.png,Consolidation,26,22877,56,F,AP
+00010069_012.png,Mass,12,10069,82,F,PA
+00001122_009.png,No Finding,9,1122,18,M,AP
+00002728_001.png,No Finding,1,2728,40,F,PA
+00001485_001.png,No Finding,1,1485,12,F,PA
+00021381_032.png,No Finding,32,21381,65,F,PA
+00013670_043.png,Nodule,43,13670,56,M,AP
+00015537_003.png,Effusion|Emphysema,3,15537,52,F,PA
+00022415_004.png,Fibrosis,4,22415,68,F,PA
+00009727_039.png,Consolidation,39,9727,14,F,AP
+00017544_003.png,Edema|Infiltration|Nodule,3,17544,49,M,AP
+00000362_003.png,No Finding,3,362,63,M,PA
+00010092_047.png,Infiltration,47,10092,51,F,PA
+00005067_012.png,No Finding,12,5067,54,F,PA
+00021274_014.png,No Finding,14,21274,54,F,AP
+00028105_000.png,Effusion|Infiltration,0,28105,36,M,PA
+00013651_000.png,Infiltration,0,13651,47,M,PA
+00003339_000.png,No Finding,0,3339,73,M,PA
+00019730_009.png,Atelectasis|Infiltration,9,19730,31,F,PA
+00001751_001.png,Fibrosis,1,1751,37,M,PA
+00011361_005.png,Effusion|Mass,5,11361,65,F,AP
+00015865_000.png,No Finding,0,15865,56,M,PA
+00013493_008.png,No Finding,8,13493,23,M,PA
+00018562_000.png,Effusion,0,18562,31,M,PA
+00025119_009.png,No Finding,9,25119,64,F,AP
+00010380_008.png,No Finding,8,10380,36,F,AP
+00005551_000.png,No Finding,0,5551,54,F,PA
+00023140_003.png,No Finding,3,23140,21,M,PA
+00015866_000.png,Infiltration,0,15866,26,F,PA
+00026057_006.png,Effusion,6,26057,63,M,PA
+00014530_002.png,Infiltration,2,14530,53,F,AP
+00002060_002.png,No Finding,2,2060,52,F,PA
+00012638_000.png,Fibrosis,0,12638,68,M,PA

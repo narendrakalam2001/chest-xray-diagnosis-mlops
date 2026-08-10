@@ -1,0 +1,11 @@
+[
+  {
+    "decision": "PROMOTED",
+    "reason": "No existing champion \u2014 first model auto-promoted",
+    "challenger_name": "densenet121",
+    "challenger_mean_auc": 0.7864,
+    "champion_name": null,
+    "champion_mean_auc": null,
+    "evaluated_at": "2026-08-02 15:48:24"
+  }
+]

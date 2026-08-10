@@ -1,0 +1,94 @@
+# ============================================================
+# GITHUB ACTIONS CI — Chest X-Ray Diagnosis ML System
+# ============================================================
+# Triggers: push / PR to main or develop
+# Jobs:
+#   lint   → ruff style check
+#   test   → pytest 30+ unit tests with coverage report
+# ============================================================
+
+name: CI — Chest X-Ray Diagnosis
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+
+  # ──────────────────────────────────────────────────────────
+  # JOB 1: LINT
+  # ──────────────────────────────────────────────────────────
+  lint:
+    name: Code Style Check (ruff)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install ruff
+        run: pip install ruff
+
+      - name: Run ruff lint
+        run: ruff check src/ serving/ services/ monitoring/ simulation/ scripts/ tests/
+        continue-on-error: true    # warn but don't block on style
+
+  # ──────────────────────────────────────────────────────────
+  # JOB 2: UNIT TESTS
+  # ──────────────────────────────────────────────────────────
+  test:
+    name: Pytest Unit Tests
+    runs-on: ubuntu-latest
+    needs: lint
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest pytest-cov
+
+      - name: Run pytest with coverage
+        run: |
+          pytest tests/test_pipeline_core.py \
+            -v \
+            --tb=short \
+            --cov=src \
+            --cov=simulation \
+            --cov-report=term-missing \
+            --cov-report=xml:coverage.xml \
+            --cov-fail-under=70
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coverage-report
+          path: coverage.xml
+
+      - name: Coverage summary badge
+        run: |
+          echo "Coverage report generated at coverage.xml"

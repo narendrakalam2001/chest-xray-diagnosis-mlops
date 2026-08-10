@@ -1,0 +1,44 @@
+# ============================================================
+# RENDER DEPLOYMENT — Chest X-Ray Diagnosis ML System
+# ============================================================
+# Deploys 2 services to Render.com:
+#   1. chest-xray-api       → FastAPI (Web Service)
+#   2. chest-xray-dashboard → Streamlit (Web Service)
+#
+# Deploy: connect GitHub repo → Render auto-detects render.yaml
+# ============================================================
+
+services:
+
+  # ── FastAPI Prediction API ──────────────────────────────────
+  - type: web
+    name: chest-xray-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn serving.xray_api:app --host 0.0.0.0 --port $PORT --workers 1
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: PORT
+        value: "8000"
+    healthCheckPath: /health
+    autoDeploy: true
+
+  # ── Streamlit Monitoring Dashboard ─────────────────────────
+  - type: web
+    name: chest-xray-dashboard
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: >
+      streamlit run monitoring/monitoring_dashboard.py
+      --server.port $PORT
+      --server.address 0.0.0.0
+      --browser.gatherUsageStats false
+    envVars:
+      - key: XRAY_API_URL
+        value: https://chest-xray-api.onrender.com
+      - key: PYTHONUNBUFFERED
+        value: "1"
+    autoDeploy: true

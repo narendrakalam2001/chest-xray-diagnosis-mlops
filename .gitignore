@@ -1,0 +1,92 @@
+# ============================================================
+# .gitignore — Chest X-Ray Diagnosis ML System
+# ============================================================
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# ── Virtual Environments ─────────────────────────────────────
+.venv/
+venv/
+env/
+.conda/
+*.conda
+
+# ── Jupyter ──────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Testing & Coverage ───────────────────────────────────────
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.cover
+
+# ── MLflow ───────────────────────────────────────────────────
+mlruns/
+mlartifacts/
+
+# ── Trained Models Keep these files ──────────────────────
+!xray_models/*.pt
+!xray_models/*.pkl
+!xray_models/*.npy
+!xray_models/latest_model.json
+!xray_models/challenger_log.json
+!xray_models/model_card_*.json
+!xray_models/test_classification_report.csv
+!xray_models/feature_drift_report.csv
+!xray_models/.gitkeep
+
+# Data — sirf sample folder allowed
+data/images_*/
+data/*.png
+data/*.jpg
+data/*.csv
+data/*.xls
+
+# Sample folder ALLOW karo
+!data/sample_images/
+!data/sample_images/*.png
+!data/sample_metadata.*
+!data/.gitkeep
+
+# ── Logs ─────────────────────────────────────────────────────
+!logs/*.csv
+logs/*.log
+!logs/.gitkeep
+
+# ── OS Files ─────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── IDE ──────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Environment Variables ────────────────────────────────────
+.env
+.env.*
+*.env
+secrets.json
+
+# ── Temp / Cache ─────────────────────────────────────────────
+*.tmp
+*.temp
+.cache/
+tmp/

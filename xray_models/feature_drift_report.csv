@@ -1,0 +1,15 @@
+feature,drift_score
+Atelectasis,0.0464
+Cardiomegaly,0.4309
+Effusion,0.2196
+Infiltration,0.0638
+Mass,0.112
+Nodule,0.2462
+Pneumonia,0.1648
+Pneumothorax,0.103
+Consolidation,0.1172
+Edema,1.9249
+Emphysema,0.7082
+Fibrosis,0.3961
+Pleural_Thickening,0.2014
+Hernia,2.5887
