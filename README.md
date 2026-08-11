@@ -196,6 +196,10 @@ Most frequent pathologies detected across all API predictions — Pneumothorax d
 |---|---|
 | ![Tests](docs/reports/test_coverage.png) | ![Simulation](docs/reports/simulation.png) |
 
+| Training & Evaluation Summary |
+|---|
+| ![Training Summary](docs/reports/training_model_summary.png) |
+
 ---
 
 ## 🎬 System Demo
@@ -207,7 +211,7 @@ Most frequent pathologies detected across all API predictions — Pneumothorax d
 ## 📁 Project Structure
 
 ```
-chest-xray-diagnosis/
+chest-xray-diagnosis-mlops/
 │
 ├── src/                                    # Core ML system
 │   ├── config.py                           # All constants — IMAGE_SIZE, BATCH_SIZE, thresholds, gates
@@ -287,8 +291,13 @@ chest-xray-diagnosis/
 ├── Dockerfile.dashboard                  # Streamlit dashboard container
 ├── docker-compose.yml                    # API + Dashboard (ports 8000 + 8501)
 ├── .github/workflows/ci.yml             # GitHub Actions — pytest on every push
+├── .gitignore
+├── .dockerignore
+├── LICENSE                               # MIT License
+├── README.md                             # This file
 ├── render.yaml                           # Render.com deployment config
 ├── requirements.txt                      # All dependencies
+├── runtime.txt                           # Python 3.10.13
 ├── conftest.py                           # pytest path config
 └── pytest.ini                            # pytest configuration
 ```
@@ -300,8 +309,8 @@ chest-xray-diagnosis/
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/narendrakalam2001/chest-xray-diagnosis.git
-cd chest-xray-diagnosis
+git clone https://github.com/narendrakalam2001/chest-xray-diagnosis-mlops.git
+cd chest-xray-diagnosis-mlops
 pip install -r requirements.txt
 ```
 
@@ -459,6 +468,41 @@ Returns full model card JSON — metrics, thresholds, clinical notes, business i
 
 ---
 
+## 🏆 Champion vs Challenger — 3-Gate Promotion
+
+Every new training run is compared against the production champion using **3 promotion gates**:
+
+| Gate | Condition | Rationale |
+|---|---|---|
+| Mean AUC Improvement | Challenger must beat champion by ≥ 0.005 | Meaningful accuracy gain only |
+| Mean AUC Threshold | ≥ 0.75 | Minimum viable diagnostic discrimination |
+| Train-Val AUC Gap | ≤ 0.08 | No overfitting to the training set |
+
+> **Why strict gates?** A radiology model that gets promoted with worse generalization than the
+> champion could silently degrade diagnostic accuracy in production — the 3-gate system ensures
+> any new backbone or hyperparameter change is demonstrably better before going live.
+
+**Real run — first model auto-promotion:**
+
+```
+CHAMPION-CHALLENGER RESULT
+  Decision : PROMOTED
+  Reason   : No existing champion — first model auto-promoted
+TRAINING COMPLETE
+  Backbone  : densenet121
+  Mean AUC  : 0.7864
+  Mean F1   : 0.2091
+  Mean AP   : 0.1711
+  Model path: xray_models\xray_model_densenet121_v20260802_154823.pt
+```
+
+> Every fresh registry starts with zero-friction auto-promotion — subsequent retrains (ResNet50,
+> EfficientNet-B0, or re-tuned DenseNet121) must then clear all 3 gates to replace this champion.
+
+Results logged to `xray_models/challenger_log.json` and visible in the dashboard Section 2 with per-gate ✅/❌ status.
+
+---
+
 ## 🔬 Per-Class AUC Results
 
 | Pathology | AUC | Threshold | Clinical Priority |
@@ -477,6 +521,35 @@ Returns full model card JSON — metrics, thresholds, clinical notes, business i
 | **Pneumonia** | `0.7023` | **0.35** | 🔴 Critical |
 | **Infiltration** | `0.6827` | 0.50 | Standard |
 | **Nodule** | `0.6794` | **0.45** | Elevated |
+
+---
+
+## 🔬 Model F1 vs Radiologist Benchmark (Real Test-Set Run)
+
+Full classification report from the actual test-set evaluation (`n=21,845`), compared against
+Rajpurkar et al. 2017 radiologist-level F1 benchmarks:
+
+| Label | Positive Cases | F1 | ROC-AUC | vs Radiologist |
+|---|---|---|---|---|
+| Effusion | 2,822 | 0.4988 | 0.8502 | -0.3712 |
+| Infiltration | 3,832 | 0.3867 | 0.6827 | -0.3033 |
+| Atelectasis | 2,233 | 0.3317 | 0.7622 | -0.4683 |
+| Edema | 444 | 0.2242 | 0.8781 | -0.5958 |
+| Consolidation | 926 | 0.1971 | 0.7655 | -0.5429 |
+| Emphysema | 395 | 0.1947 | 0.8312 | -0.6753 |
+| Pneumothorax | 1,004 | 0.1758 | 0.8446 | -0.6442 |
+| Pleural_Thickening | 687 | 0.1665 | 0.7471 | -0.5935 |
+| Hernia | 32 | 0.1714 | 0.8705 | -0.7386 |
+| Mass | 1,097 | 0.1441 | 0.7634 | -0.6359 |
+| Cardiomegaly | 588 | 0.1414 | 0.8676 | -0.7586 |
+| Fibrosis | 312 | 0.1203 | 0.7654 | -0.6797 |
+| Nodule | 1,197 | 0.1275 | 0.6794 | -0.5325 |
+| Pneumonia | 281 | 0.0472 | 0.7023 | -0.6028 |
+
+> The model trails the radiologist F1 benchmark on every label (all negative deltas) — expected
+> for a single CNN vs a trained human expert, and consistent with the literature. Effusion and
+> Infiltration are closest to radiologist-level performance; Hernia and Cardiomegaly show the
+> largest gaps, likely driven by low positive-case counts (32 and 588 respectively).
 
 ---
 
@@ -582,6 +655,7 @@ Based on actual model results + Apollo / Fortis / Niramai benchmarks:
 | Cost saved per 1,000 scans | **~₹500,000** |
 | Pneumothorax detection AUC | **0.8446** |
 | Pneumonia detection AUC | **0.7023** |
+| Clinical cost evaluation (test set, real run) | **₹45,182.00** total (`n=21,845` images) |
 
 > At Apollo Hospitals scale (thousands of scans/day) → hundreds of radiologist hours saved daily, with zero missed Pneumothorax cases at the 0.30 threshold.
 
@@ -595,6 +669,11 @@ Based on actual model results + Apollo / Fortis / Niramai benchmarks:
 - `Hernia` (32 positive test cases) and `Pneumonia` (281 cases) are underrepresented — AUC reliable but F1 less stable
 - Regular fairness audits recommended — model performance may vary by patient age, gender, scanner type
 - CDSCO AI/ML medical device guidelines compliance requires prospective clinical validation before deployment
+- **Real test-set uncertainty rate was 97.5%** (entropy > 0.15 flag) — far above the dashboard's
+  20% alert threshold. Because uncertainty is computed across all 14 independent label
+  probabilities, most multi-label X-rays trigger at least one high-entropy class. This means the
+  `UNCERTAIN` flag currently fires on nearly every case in practice — the entropy threshold and/or
+  aggregation logic should be recalibrated before this flag is used to gate clinical workflow.
 
 ---
 
@@ -603,6 +682,11 @@ Based on actual model results + Apollo / Fortis / Niramai benchmarks:
 **Narendra Kalam** — MSc Computer Science (Gold Medalist — NASSCOM, Full Stack Data Science + AI)
 
 > Building 20+ industry-level, end-to-end ML systems across all domains.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/narendra-kalam/)
+[![Kaggle](https://img.shields.io/badge/Kaggle-Profile-20BEFF?logo=kaggle)](https://www.kaggle.com/narendrakalam)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green?logo=github)](https://narendrakalam2001.github.io/)
+[![Email](https://img.shields.io/badge/Email-Contact-red?logo=gmail)](mailto:kalamnarendra2001@gmail.com)
 
 ### Portfolio Projects
 
